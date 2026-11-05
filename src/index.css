@@ -1,0 +1,293 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap');
+@import "tailwindcss";
+
+
+@theme {
+  /* Typography */
+  --font-heading: "Space Grotesk", sans-serif;
+  --font-body: "Inter", sans-serif;
+  --font-code: "JetBrains Mono", monospace;
+
+  /* Background */
+  --color-background: #080D12;
+  --color-surface: #0D151D;
+  --color-elevated: #111D27;
+
+  /* Accent */
+  --color-primary: #4ADE80;
+  --color-secondary: #22D3EE;
+
+  /* Text */
+  --color-text-primary: #F3F4F6;
+  --color-text-secondary: #94A3B8;
+
+  /* Border */
+  --color-border: #263746;
+}
+
+:root {
+  font-family: var(--font-body);
+  color: var(--color-text-primary);
+  background-color: var(--color-background);
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  scroll-behavior: smooth;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 100px;
+}
+
+/* Global Background */
+
+body {
+  min-height: 100vh;
+  color: var(--color-text-primary);
+
+  background-color: #17191D;
+
+  background-image:
+    radial-gradient(
+      ellipse at 15% 15%,
+      rgba(74, 222, 128, 0.16),
+      transparent 38%
+    ),
+    radial-gradient(
+      ellipse at 90% 45%,
+      rgba(239, 68, 68, 0.10),
+      transparent 35%
+    ),
+    radial-gradient(
+      ellipse at 50% 100%,
+      rgba(74, 222, 128, 0.07),
+      transparent 40%
+    );
+
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+
+button,
+a {
+  -webkit-tap-highlight-color: transparent;
+}
+
+::selection {
+  color: #0B0F14;
+  background-color: #4ADE80;
+}
+
+@media (max-width: 640px) {
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  .section-container {
+    padding: 72px 20px;
+  }
+  }
+}
+
+.section-container {
+  width: 100%;
+  max-width: 1200px;
+  margin-inline: auto;
+  padding: 100px 32px;
+}
+
+/* =========================
+   HERO BACKGROUND
+========================= */
+
+.hero-section {
+  position: relative;
+  min-height: 85vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  padding: 100px 24px;
+  text-align: center;
+  background: transparent;
+}
+
+/* =========================
+   HERO CONTENT
+========================= */
+
+.hero-content {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  max-width: 900px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* =========================
+   NAME LIGHT EFFECT
+========================= */
+
+.hero-name {
+  position: relative;
+  isolation: isolate;
+  margin-top: 20px;
+  font-family: var(--font-heading);
+  font-size: clamp(4rem, 10vw, 7rem);
+  font-weight: 600;
+  line-height: 1.1;
+  letter-spacing: -0.06em;
+
+  color: rgba(74, 222, 128, 0.78);
+
+  text-shadow:
+    0 0 10px rgba(74, 222, 128, 0.5),
+    0 0 30px rgba(74, 222, 128, 0.3),
+    0 0 60px rgba(74, 222, 128, 0.15);
+}
+
+/* Soft light behind the name */
+
+.hero-name::before {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  width: 130%;
+  height: 180%;
+
+  background: radial-gradient(
+    ellipse,
+    rgba(74, 222, 128, 0.18) 0%,
+    rgba(74, 222, 128, 0.07) 35%,
+    transparent 70%
+  );
+
+  filter: blur(25px);
+  pointer-events: none;
+}
+
+/* Profession */
+
+.hero-role {
+  margin-top: 18px;
+  font-family: var(--font-heading);
+  font-size: clamp(0.85rem, 2vw, 1.1rem);
+  font-weight: 700;
+  letter-spacing: 0.35em;
+  background: linear-gradient(
+    90deg,
+    #4ade80 0%,
+    #d1fae5 50%,
+    #f87171 100%
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Buttons */
+
+.hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 18px;
+  margin-top: 38px;
+}
+
+.hero-button-primary,
+.hero-button-secondary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  padding: 13px 25px;
+  border-radius: 999px;
+  font-size: 0.875rem;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+/* View My Work */
+
+.hero-button-primary {
+  color: #07100c;
+  background: linear-gradient(
+    110deg,
+    #4ade80,
+    #16a34a,
+    #b45353
+  );
+  box-shadow: 0 0 22px rgba(74, 222, 128, 0.2);
+}
+
+.hero-button-primary:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 0 30px rgba(74, 222, 128, 0.4);
+}
+
+/* Get in Touch */
+
+.hero-button-secondary {
+  color: var(--color-text-primary);
+  border: 1px solid rgba(156, 163, 175, 0.5);
+  background: rgba(8, 13, 18, 0.5);
+}
+
+.hero-button-secondary:hover {
+  border-color: var(--color-primary);
+  color: var(--color-primary);
+  transform: translateY(-3px);
+}
+
+/* About Section */
+/* About Quote Floating Animation */
+.about-quote-float {
+  animation: aboutFloat 5s ease-in-out infinite;
+}
+
+@keyframes aboutFloat {
+  0%, 100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+/* Respect reduced motion preference */
+@media (prefers-reduced-motion: reduce) {
+  .about-quote-float {
+    animation: none;
+  }
+}
+
+/* Typewriter Cursor Animation */
+.typing-cursor {
+  animation: cursorBlink 0.8s steps(2, start) infinite;
+}
+
+@keyframes cursorBlink {
+  to {
+    visibility: hidden;
+  }
+}
+
