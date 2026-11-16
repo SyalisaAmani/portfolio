@@ -20,7 +20,31 @@ const translations = {
 
     projects: {
       title: 'Proyek Unggulan',
-      description: 'Beberapa project yang saya kembangkan sebagai bagian dari perjalanan belajar dan eksplorasi teknologi web.'
+      description: 'Beberapa project yang saya kembangkan sebagai bagian dari perjalanan belajar dan eksplorasi teknologi web.',
+
+      cards: {
+        prodexa: {
+          category: 'Pengembangan Frontend',
+          description: 'Aplikasi katalog produk modern dengan fitur autentikasi, pencarian produk, wishlist, dan detail produk.',
+          status: 'Selesai',
+        },
+        lms: {
+          category: 'Pengembangan Fullstack',
+          description: 'Platform pembelajaran digital untuk mengelola materi, kelas, dan aktivitas pembelajaran.',
+          status: 'Dalam Pengembangan',
+        },
+        paddle: {
+          category: 'Pengembangan Fullstack',
+          description: 'Platform pemesanan lapangan padel secara online.',
+          status: 'Dalam Pengembangan',
+        },
+      },
+
+      labels: {
+        project: 'PROYEK',
+        github: 'Lihat Kode',
+        liveDemo: 'Demo Langsung',
+      },
     },
 
     about: {
@@ -40,7 +64,7 @@ const translations = {
         tools: 'Tools & Alur Kerja',
       },
     },
-    
+
     education: {
       title: 'Pendidikan & Sertifikasi',
       description:
@@ -74,7 +98,7 @@ const translations = {
       emailCopied: 'Email Tersalin!',
       copyEmail: 'Salin Email',
       whatsapp: 'WhatsApp',
-      closing: "Mari ciptakan sesuatu yang bermakna bersama.",
+      closing: 'Mari ciptakan sesuatu yang bermakna bersama.',
       socialLabel: 'TEMUKAN SAYA DI MEDIA SOSIAL',
       whatsappMessage:
         'Halo Syalisa, saya tertarik untuk berdiskusi mengenai peluang kerja atau kolaborasi.',
@@ -112,6 +136,30 @@ const translations = {
     projects: {
       title: 'Featured Projects',
       description: 'Some projects I have developed as part of my learning journey and exploration of web technologies.',
+
+      cards: {
+        prodexa: {
+          category: 'Frontend Development',
+          description: 'A modern product catalog application featuring authentication, product search, wishlist, and detailed product views.',
+          status: 'Completed',
+        },
+        lms: {
+          category: 'Fullstack Development',
+          description: 'A digital learning platform for managing learning materials, classes, and educational activities.',
+          status: 'In Development',
+        },
+        paddle: {
+          category: 'Fullstack Development',
+          description: 'An online platform for booking padel courts.',
+          status: 'In Development',
+        },
+      },
+
+      labels: {
+        project: 'PROJECT',
+        github: 'View Code',
+        liveDemo: 'Live Demo',
+      },
     },
 
     about: {
@@ -156,7 +204,7 @@ const translations = {
         },
       },
     },
-    
+
     contact: {
       title: 'Have a project or exciting opportunity?',
       description:
