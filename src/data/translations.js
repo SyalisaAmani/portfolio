@@ -28,15 +28,16 @@ const translations = {
           description: 'Aplikasi katalog produk modern dengan fitur autentikasi, pencarian produk, wishlist, dan detail produk.',
           status: 'Selesai',
         },
-        lms: {
-          category: 'Pengembangan Fullstack',
-          description: 'Platform pembelajaran digital untuk mengelola materi, kelas, dan aktivitas pembelajaran.',
-          status: 'Dalam Pengembangan',
-        },
         paddle: {
           category: 'Pengembangan Fullstack',
           description: 'Platform pemesanan lapangan padel secara online.',
           status: 'Dalam Pengembangan',
+        },
+        task: {
+            category: 'Pengembangan Frontend',
+            description:
+                'Dashboard produktivitas pribadi untuk mengelola tugas harian, mengatur waktu fokus, dan menyimpan shortcut website dengan tampilan responsif.',
+            status: 'Selesai',
         },
       },
 
@@ -143,15 +144,16 @@ const translations = {
           description: 'A modern product catalog application featuring authentication, product search, wishlist, and detailed product views.',
           status: 'Completed',
         },
-        lms: {
-          category: 'Fullstack Development',
-          description: 'A digital learning platform for managing learning materials, classes, and educational activities.',
-          status: 'In Development',
-        },
         paddle: {
           category: 'Fullstack Development',
           description: 'An online platform for booking padel courts.',
           status: 'In Development',
+        },
+        task: {
+            category: 'Frontend Development',
+            description:
+                'A personal productivity dashboard for managing daily tasks, organizing focus sessions, and saving website shortcuts with a responsive interface.',
+            status: 'Completed',
         },
       },
 
